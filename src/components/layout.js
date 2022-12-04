@@ -34,8 +34,13 @@ const Layout = ({ children }) => {
           }}
         >
           <img
-            style={{ width: "10%", objectFit: "cover" }}
-            src="https://cdn.pixabay.com/photo/2021/08/20/15/36/cryptocurrency-6560735_960_720.png"
+            style={{
+              width: "20%",
+              objectFit: "cover",
+              marginLeft: "5%",
+              borderRadius: "8px",
+            }}
+            src="/logo.png"
             alt="logo"
           />
 

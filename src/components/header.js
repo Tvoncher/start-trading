@@ -4,36 +4,30 @@ import { Link } from "gatsby"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      position: "fixed",
+      position: "fixed ",
+      top: "0",
       width: "100%",
-      backgroundColor: "Teal",
-      display: "block",
+      background:
+        "linear-gradient(90deg, rgba(238,174,202,1) 15%, rgba(28,35,43,0.48503151260504207) 100%)",
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
       zIndex: "10",
     }}
   >
     <img
+      style={{ margin: "1% 1% 0 1%", width: "15%", borderRadius: "8px" }}
       alt="Start trading logo"
       height={40}
-      src="https://cdn.pixabay.com/photo/2021/08/20/15/36/cryptocurrency-6560735_960_720.png"
+      src="/logo.png"
     />
-    <Link
-      id="navLink"
-      to="/"
-      style={{
-        color: "white",
-        fontSize: `var(--font-sm)`,
-        textDecoration: `none`,
-      }}
-    >
-      {siteTitle}
-    </Link>
-
+    <h2 style={{ color: "white", marginRight: "1%" }}>| Start trading</h2>
     <Link
       id="navLink"
       to="/page-2"
       style={{
         color: "white",
-        fontSize: `var(--font-sm)`,
+        fontSize: `24px`,
         textDecoration: `none`,
       }}
     >
@@ -45,7 +39,7 @@ const Header = ({ siteTitle }) => (
       to="/page-2"
       style={{
         color: "white",
-        fontSize: `var(--font-sm)`,
+        fontSize: `24px`,
         textDecoration: `none`,
       }}
     >
@@ -57,7 +51,7 @@ const Header = ({ siteTitle }) => (
       to="/page-2"
       style={{
         color: "white",
-        fontSize: `var(--font-sm)`,
+        fontSize: `24px`,
         textDecoration: `none`,
       }}
     >
@@ -69,7 +63,7 @@ const Header = ({ siteTitle }) => (
       to="/page-2"
       style={{
         color: "white",
-        fontSize: `var(--font-sm)`,
+        fontSize: `24px`,
         textDecoration: `none`,
       }}
     >

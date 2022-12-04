@@ -46,7 +46,14 @@ const EmblaCarousel = ({ slides }) => {
         <div className="embla__container">
           {slides.map(index => (
             <div className="embla__slide" key={index}>
-              <div className="embla__slide__inner">
+              <div
+                className="embla__slide__inner"
+                style={{
+                  background: `linear-gradient(${
+                    2 * index * 10
+                  }deg, rgba(238,174,202,1) 15%, rgba(28,35,43,0.48503151260504207) 64%)`,
+                }}
+              >
                 <img
                   className="embla__slide__img"
                   src={mediaByIndex(index)}
