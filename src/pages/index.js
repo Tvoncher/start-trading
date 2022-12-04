@@ -71,58 +71,187 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 
 const IndexPage = () => (
   <Layout>
-    <div className={styles.textCenter}>
-      <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
-      <h1>
-        Welcome to <b>Gatsby!</b>
-      </h1>
-      <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
-        {samplePageLinks.map((link, i) => (
-          <React.Fragment key={link.url}>
-            <Link to={link.url}>{link.text}</Link>
-            {i !== samplePageLinks.length - 1 && <> · </>}
-          </React.Fragment>
-        ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
-      </p>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "space-around",
+        marginBottom: "5%",
+      }}
+      className="firstLoaded"
+    >
+      <div>
+        <h2>
+          Easy.
+          <br />
+          Controllable.
+          <br />
+          Secure.
+          <br />
+        </h2>
+      </div>
+      <img src="https://s3-us-west-1.amazonaws.com/coin-tracker-public/static/images/sprites/mobile-apps.svg"></img>
     </div>
-    <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
-      ))}
-    </ul>
-    {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))}
+
+    <div
+      className="markets__box"
+      style={{
+        width: "100%",
+        height: "20%",
+        border: "2px solid red",
+        marginBottom: "10%",
+      }}
+    >
+      <center>
+        <h2>Markets</h2>
+      </center>
+      <div style={{ display: "flex" }}>
+        <img
+          style={{ width: "30%", border: "2px solid lightgray", margin: "1%" }}
+          src="https://www.svgrepo.com/show/308981/bitcoin-money-cryptocurrency.svg"
+          alt="cryptocurrencies"
+        />
+        <img
+          style={{ width: "30%", border: "2px solid lightgray", margin: "1%" }}
+          src="https://cdn.worldvectorlogo.com/logos/forex-1.svg"
+          alt="forex"
+        />
+        <img
+          style={{ width: "30%", border: "2px solid lightgray", margin: "1%" }}
+          src="https://www.svgrepo.com/show/88166/stock-earnings.svg"
+          alt="stocks"
+        />
+      </div>
+    </div>
+
+    <div
+      className="trading__options__box"
+      style={{
+        width: "100%",
+        height: "20%",
+        border: "2px solid blue",
+        marginBottom: "10%",
+      }}
+    >
+      <center>
+        <h2>Trading options</h2>
+      </center>
+      <div style={{ display: "flex" }}>
+        <img
+          style={{
+            width: "30%",
+            border: "2px solid lightgray",
+            margin: "1%",
+          }}
+          src="https://www.melaninfx.com/xas.scdn5.secure.raxcdn.com/build/twigImages/blocksNew/openAccount/iPhone_black.3951fd8d.png"
+          alt="Spot"
+        />
+        <img
+          style={{
+            width: "30%",
+            border: "2px solid lightgray",
+            margin: "1%",
+          }}
+          src="https://bitso.com/legacy-assets/alpha/landing/assets/img/QR-Section.svg"
+          alt="Margin"
+        />
+        <img
+          style={{
+            width: "30%",
+            border: "2px solid lightgray",
+            margin: "1%",
+          }}
+          src="https://alb.com/assets/main/img/other/main-trade-image.svg"
+          alt="Futures"
+        />
+      </div>
+    </div>
+
+    <div
+      className="our__platforms__box"
+      style={{
+        width: "100%",
+        height: "20%",
+        border: "2px solid orange",
+        marginBottom: "10%",
+      }}
+    >
+      <center>
+        <h2>Our platforms</h2>
+        <br />
+        <h4>
+          Choose from 8 awesome platforms — each developed to meet your needs.
+        </h4>
+        <br />
+      </center>
+
+      <div
+        className="our__platforms__box__container"
+        style={{ display: "flex", justifyContent: "space-between" }}
+      >
+        <div
+          className="our__platforms__box__slider"
+          style={{ display: "flex", flexDirection: "column" }}
+        >
+          <img
+            style={{ width: "40%", margin: "10%", opacity: "0.3" }}
+            src="https://s2.coinmarketcap.com/static/img/coins/200x200/4195.png"
+            alt="platform1"
+          />
+          <img
+            style={{ width: "40%", margin: "10%" }}
+            src="https://www.svgrepo.com/show/308981/bitcoin-money-cryptocurrency.svg"
+            alt="platform2"
+          />
+          <img
+            style={{ width: "40%", margin: "10%", opacity: "0.6" }}
+            src="https://www.svgrepo.com/show/174165/bitcoin-emblem.svg"
+            alt="platform3"
+          />
+          <img
+            style={{ width: "40%", margin: "10%", opacity: "0.3" }}
+            src="https://www.svgrepo.com/show/224224/bitcoin.svg"
+            alt="platform4"
+          />
+        </div>
+        <img
+          style={{ width: "50vw", maxHeight: "40vh", margin: "10%" }}
+          src="https://d6t93aut4ltrr.cloudfront.net/Pictures/1024x536/0/4/1/7041_onlinetradingcryptocurrency20210902083528utc_48886.jpg"
+          alt="platformLarge1"
+        />
+      </div>
+    </div>
+
+    <div
+      className="reviws__box"
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        border: "2px solid black",
+      }}
+    >
+      <div className="reviws__box__trust">
+        <center>
+          <h2>What our clients say about us</h2>
+          <img
+            style={{ width: "30%" }}
+            src="https://www.kindpng.com/picc/m/200-2008522_transparent-sparkels-png-trustpilot-5-star-vector-png.png"
+            alt="trustPilot"
+          />
+          <h4>Trust Score 5.0 | 40,089 reviews</h4>
+        </center>
+      </div>
+      <div className="reviws__box__messages">
+        <center>
+          <h3>
+            Start Trading Lite is simply the best trading app I ever seen!
+          </h3>
+          <br /> <h4>Pavel J.</h4>
+        </center>
+      </div>
+    </div>
   </Layout>
 )
 
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
 export const Head = () => <Seo title="Home" />
 
 export default IndexPage
