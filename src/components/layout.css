@@ -10,3 +10,8 @@
   cursor: pointer;
   margin: 1%;
 }
+
+#navLink {
+  margin-right: 3%;
+  border: 2px solid white;
+}
