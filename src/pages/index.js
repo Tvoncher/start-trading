@@ -226,7 +226,9 @@ const IndexPage = () => (
       style={{
         display: "flex",
         justifyContent: "space-between",
-        border: "2px solid black",
+        background: "rgb(238,174,202)",
+        background:
+          "linear-gradient(90deg, rgba(238,174,202,1) 15%, rgba(28,35,43,0.48503151260504207) 64%)",
       }}
     >
       <div className="reviws__box__trust">
@@ -242,12 +244,89 @@ const IndexPage = () => (
       </div>
       <div className="reviws__box__messages">
         <center>
-          <h3>
+          <h3 style={{ margin: "5%" }}>
             Start Trading Lite is simply the best trading app I ever seen!
           </h3>
           <br /> <h4>Pavel J.</h4>
         </center>
       </div>
+    </div>
+
+    <div
+      className="download__mobile__box"
+      style={{ display: "flex", justifyContent: "space-between" }}
+    >
+      <img
+        src="https://primexbt.com/assets/images/mobiles-mob.png?rev=784fa49b"
+        alt="mobileApp"
+      />
+
+      <div>
+        Our awesome app
+        <p>download</p>
+        <p>please</p>
+      </div>
+
+      <a href="https://github.com/" target="_blank">
+        <img
+          src="http://qrcoder.ru/code/?http%3A%2F%2Fhttps%3A%2F%2Fgithub.com%2F&6&0"
+          width="198"
+          height="198"
+        ></img>
+      </a>
+    </div>
+
+    <div
+      className="join__us__box"
+      style={{
+        display: "flex",
+        justifyContent: "space-around",
+        margin: "5%",
+        backgroundColor: "lightcoral",
+        borderRadius: "8px",
+      }}
+    >
+      <div
+        className="join__us__box__signUp"
+        style={{
+          backgroundColor: "white",
+          borderRadius: "8px",
+          marginTop: "1%",
+        }}
+      >
+        <h2>Join over 10 million traders worldwide</h2>
+        <p>
+          <h4>Sign up for your demo account now</h4>
+        </p>
+        <input
+          style={{ margin: "3%" }}
+          type="email"
+          placeholder="Email"
+          required
+        />
+        <button
+          style={{
+            borderRadius: "10%",
+            backgroundColor: "crimson",
+            padding: "3%",
+            cursor: "pointer",
+          }}
+        >
+          SignUp
+        </button>
+        <input
+          type="checkbox"
+          name="termsAndConditions"
+          id="termsAndConditions"
+        />
+        <p>I agree to the terms and conditions</p>
+        <p>Or sign up with</p>
+      </div>
+      <img
+        style={{ objectFit: "cover", width: "30%", marginTop: "3%" }}
+        src="https://alphatradinghub.com/wp-content/uploads/2022/03/futures.png"
+        alt="joinUs"
+      />
     </div>
   </Layout>
 )

@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
-footer {
-  border: 2px solid red;
-  height: 30%;
+#socialsImg {
+  width: 10%;
+  object-fit: contain;
+  cursor: pointer;
+  margin: 1%;
 }
