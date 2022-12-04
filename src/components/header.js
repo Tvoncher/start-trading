@@ -8,6 +8,7 @@ const Header = ({ siteTitle }) => (
       width: "100%",
       backgroundColor: "Teal",
       display: "block",
+      zIndex: "10",
     }}
   >
     <img

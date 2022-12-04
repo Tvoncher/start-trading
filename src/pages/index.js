@@ -1,71 +1,14 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import EmblaCarousel from "../utils/Embla"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-  },
-  {
-    text: "Examples",
-    url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
-    description:
-      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-  },
-]
-
-const samplePageLinks = [
-  {
-    text: "Page 2",
-    url: "page-2",
-    badge: false,
-    description:
-      "A simple example of linking to another page within a Gatsby site",
-  },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
-]
-
-const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
-  {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
-  },
-  {
-    text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
-  },
-  {
-    text: "Showcase",
-    url: "https://gatsbyjs.com/showcase/",
-  },
-  {
-    text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
-  },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
-]
+const SLIDE_COUNT = 5
+const slides = Array.from(Array(SLIDE_COUNT).keys())
 
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
@@ -74,19 +17,41 @@ const IndexPage = () => (
     <div
       style={{
         display: "flex",
+        flexWrap: "wrap",
         justifyContent: "space-around",
         marginBottom: "5%",
+        paddingTop: "5%",
+        background: "rgb(238,174,202)",
+        background:
+          "linear-gradient(90deg, rgba(238,174,202,1) 15%, rgba(28,35,43,0.48503151260504207) 64%)",
       }}
       className="firstLoaded"
     >
       <div>
-        <h2>
+        <h2 style={{ fontSize: "48px" }}>
           Easy.
           <br />
           Controllable.
           <br />
           Secure.
           <br />
+          <p style={{ fontSize: "28px" }}>
+            Trade with us <br />
+            earn extra prizes
+          </p>
+          <button
+            style={{
+              borderRadius: "8px",
+              backgroundColor: "crimson",
+              padding: "5%",
+              cursor: "pointer",
+              color: "white",
+              fontSize: "18px",
+              marginTop: "10%",
+            }}
+          >
+            Create demo account
+          </button>
         </h2>
       </div>
       <img src="https://s3-us-west-1.amazonaws.com/coin-tracker-public/static/images/sprites/mobile-apps.svg"></img>
@@ -97,30 +62,13 @@ const IndexPage = () => (
       style={{
         width: "100%",
         height: "20%",
-        border: "2px solid red",
         marginBottom: "10%",
       }}
     >
       <center>
-        <h2>Markets</h2>
+        <h2 style={{ fontSize: "68px" }}>Markets</h2>
       </center>
-      <div style={{ display: "flex" }}>
-        <img
-          style={{ width: "30%", border: "2px solid lightgray", margin: "1%" }}
-          src="https://www.svgrepo.com/show/308981/bitcoin-money-cryptocurrency.svg"
-          alt="cryptocurrencies"
-        />
-        <img
-          style={{ width: "30%", border: "2px solid lightgray", margin: "1%" }}
-          src="https://cdn.worldvectorlogo.com/logos/forex-1.svg"
-          alt="forex"
-        />
-        <img
-          style={{ width: "30%", border: "2px solid lightgray", margin: "1%" }}
-          src="https://www.svgrepo.com/show/88166/stock-earnings.svg"
-          alt="stocks"
-        />
-      </div>
+      <EmblaCarousel slides={slides} />
     </div>
 
     <div
@@ -128,12 +76,16 @@ const IndexPage = () => (
       style={{
         width: "100%",
         height: "20%",
-        border: "2px solid blue",
         marginBottom: "10%",
       }}
     >
       <center>
-        <h2>Trading options</h2>
+        <h2 style={{ fontSize: "68px" }}>Trading options</h2>
+        <p>
+          <h3 style={{ fontSize: "22px" }}>
+            Trade the way you want with 3 flexible trade types.
+          </h3>
+        </p>
       </center>
       <div style={{ display: "flex" }}>
         <img
@@ -171,12 +123,11 @@ const IndexPage = () => (
       style={{
         width: "100%",
         height: "20%",
-        border: "2px solid orange",
         marginBottom: "10%",
       }}
     >
       <center>
-        <h2>Our platforms</h2>
+        <h2 style={{ fontSize: "68px" }}>Our platforms</h2>
         <br />
         <h4>
           Choose from 8 awesome platforms — each developed to meet your needs.
@@ -233,7 +184,7 @@ const IndexPage = () => (
     >
       <div className="reviws__box__trust">
         <center>
-          <h2>What our clients say about us</h2>
+          <h2 style={{ fontSize: "68px" }}>What our clients say about us</h2>
           <img
             style={{ width: "30%" }}
             src="https://www.kindpng.com/picc/m/200-2008522_transparent-sparkels-png-trustpilot-5-star-vector-png.png"
