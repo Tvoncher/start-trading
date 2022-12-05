@@ -44,7 +44,7 @@
   width: 100%;
   border-radius: 14px;
 }
-.embla__slide__inner:hover h3 {
+.embla__slide__inner:hover .embla__caption {
   visibility: visible;
 }
 
@@ -67,7 +67,7 @@
   opacity: 0.4;
 }
 
-h3 {
+.embla__caption {
   margin-top: 5%;
   visibility: hidden;
 }

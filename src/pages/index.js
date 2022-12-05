@@ -10,6 +10,7 @@ import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 const JoinUs = React.lazy(() => import("../components/joinUs"))
 const Platforms = React.lazy(() => import("../components/platforms"))
+const TradingOptions = React.lazy(() => import("../components/tradingOptions"))
 
 const SLIDE_COUNT = 5
 const slides = Array.from(Array(SLIDE_COUNT).keys())
@@ -76,43 +77,7 @@ const IndexPage = () => (
       <EmblaCarousel slides={slides} />
     </div>
 
-    <div className="trading__options__box">
-      <h2 style={{ fontSize: "68px" }}>Trading options</h2>
-
-      <h3 style={{ fontSize: "22px" }}>
-        Trade the way you want with 3 flexible trade types.
-      </h3>
-
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          textAlign: "center",
-        }}
-      >
-        <div className="trading__options__wrapper">
-          <img
-            src="https://www.melaninfx.com/xas.scdn5.secure.raxcdn.com/build/twigImages/blocksNew/openAccount/iPhone_black.3951fd8d.png"
-            alt="Spot"
-          />
-          <h5>CFDs</h5>
-        </div>
-        <div className="trading__options__wrapper">
-          <img
-            src="https://bitso.com/legacy-assets/alpha/landing/assets/img/QR-Section.svg"
-            alt="Margin"
-          />
-          <h5>Multipliers</h5>
-        </div>
-        <div className="trading__options__wrapper">
-          <img
-            src="https://alb.com/assets/main/img/other/main-trade-image.svg"
-            alt="Futures"
-          />
-          <h5>Options</h5>
-        </div>
-      </div>
-    </div>
+    <TradingOptions />
 
     <Platforms />
 

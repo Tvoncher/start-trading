@@ -75,7 +75,7 @@ const EmblaCarousel = ({ slides }) => {
                 }}
               >
                 <center>
-                  <h3>{marketsCaption[index]}</h3>
+                  <h3 className="embla__caption">{marketsCaption[index]}</h3>
                 </center>
                 <img
                   className="embla__slide__img"
