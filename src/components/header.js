@@ -16,12 +16,15 @@ const Header = ({}) => (
       zIndex: "100",
     }}
   >
-    <img
-      style={{ margin: "1% 1% 0 1%", width: "15%", borderRadius: "8px" }}
-      alt="Start trading logo"
-      height={40}
-      src="/logo.png"
-    />
+    <Link to="/">
+      <img
+        style={{ margin: "1% 1% 0 1%", borderRadius: "8px", width: "200%" }}
+        alt="Start trading logo"
+        height={40}
+        src="/logo.png"
+      />
+    </Link>
+
     <h2 style={{ color: "DarkSlateGray", marginRight: "1%" }}>
       | Start trading
     </h2>

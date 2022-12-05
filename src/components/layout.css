@@ -18,3 +18,20 @@
 #navLink {
   margin-right: 3%;
 }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(
+    90deg,
+    rgba(251, 133, 133, 1) 12%,
+    rgba(240, 145, 189, 1) 40%,
+    rgba(158, 149, 149, 1) 63%
+  );
+}
+
+.footer__logo {
+  width: 15%;
+  margin-left: 3%;
+  border-radius: 8px;
+}
