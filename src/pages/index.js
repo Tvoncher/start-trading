@@ -116,10 +116,7 @@ const IndexPage = () => (
       className="download__mobile__box"
       style={{ display: "flex", justifyContent: "space-between" }}
     >
-      <img
-        src="https://primexbt.com/assets/images/mobiles-mob.png?rev=784fa49b"
-        alt="mobileApp"
-      />
+      <StaticImage src="../images\mobileApp.png" alt="mobile App" />
 
       <div className="download__mobile__box__textbox">
         <img
