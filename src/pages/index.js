@@ -94,9 +94,9 @@ const IndexPage = () => (
       <div className="reviws__box__trust">
         <center>
           <h2 style={{ fontSize: "68px" }}>What our clients say about us</h2>
-          <img
-            style={{ width: "30%" }}
-            src="https://www.kindpng.com/picc/m/200-2008522_transparent-sparkels-png-trustpilot-5-star-vector-png.png"
+          <StaticImage
+            style={{ width: "50%" }}
+            src="../images\trust.png"
             alt="trustPilot"
           />
           <h4>Trust Score 5.0 | 40,089 reviews</h4>
