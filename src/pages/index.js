@@ -5,6 +5,7 @@ import EmblaCarousel from "../utils/Embla"
 
 import "./index.css"
 import Layout from "../components/layout"
+import Platforms from "../components/platforms"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 
@@ -110,59 +111,7 @@ const IndexPage = () => (
       </div>
     </div>
 
-    <div
-      className="our__platforms__box"
-      style={{
-        width: "100%",
-        height: "20%",
-        marginBottom: "10%",
-      }}
-    >
-      <center>
-        <h2 style={{ fontSize: "68px" }}>Our platforms</h2>
-        <br />
-        <h4>
-          Choose from 4 awesome platforms — each developed to meet your needs.
-        </h4>
-        <br />
-      </center>
-
-      <div
-        className="our__platforms__box__container"
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
-      >
-        <div
-          className="our__platforms__box__slider"
-          style={{ display: "flex", flexDirection: "column" }}
-        >
-          <img
-            src="https://s2.coinmarketcap.com/static/img/coins/200x200/4195.png"
-            alt="platform1"
-          />
-          <img
-            src="https://www.svgrepo.com/show/308981/bitcoin-money-cryptocurrency.svg"
-            alt="platform2"
-          />
-          <img
-            src="https://www.svgrepo.com/show/174165/bitcoin-emblem.svg"
-            alt="platform3"
-          />
-          <img
-            src="https://www.svgrepo.com/show/224224/bitcoin.svg"
-            alt="platform4"
-          />
-        </div>
-        <img
-          style={{ width: "50vw", maxHeight: "40vh", margin: "10%" }}
-          src="https://d6t93aut4ltrr.cloudfront.net/Pictures/1024x536/0/4/1/7041_onlinetradingcryptocurrency20210902083528utc_48886.jpg"
-          alt="platformLarge1"
-        />
-      </div>
-    </div>
+    <Platforms />
 
     <div
       className="reviws__box"

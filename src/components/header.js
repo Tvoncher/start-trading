@@ -22,7 +22,9 @@ const Header = ({}) => (
       height={40}
       src="/logo.png"
     />
-    <h2 style={{ color: "white", marginRight: "1%" }}>| Start trading</h2>
+    <h2 style={{ color: "DarkSlateGray", marginRight: "1%" }}>
+      | Start trading
+    </h2>
     <Link
       id="navLink"
       to="/page-2"
