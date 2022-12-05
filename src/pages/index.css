@@ -1,0 +1,53 @@
+.trading__options__box {
+  width: 100%;
+  height: 20%;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+.trading__options__wrapper {
+  width: 30%;
+  border: 2px solid lightgray;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.trading__options__wrapper img {
+  width: 100%;
+  max-height: 80%;
+}
+
+.trading__options__wrapper h5 {
+  margin-top: 3%;
+  font-size: 20px;
+}
+
+.our__platforms__box__slider img {
+  width: 40%;
+  margin: 10%;
+  cursor: pointer;
+}
+
+.download__mobile__box {
+  background: radial-gradient(
+    circle,
+    rgba(170, 149, 164, 0.8575805322128851) 20%,
+    rgba(139, 135, 144, 0.1) 86%
+  );
+}
+
+.download__mobile__box__textbox {
+  display: flex;
+  flex-direction: column;
+}
+.download__mobile__box__textbox h3 {
+  margin-top: 5%;
+  font-size: 28px;
+}
+.download__mobile__box__textbox h4 {
+  margin-top: 3%;
+  font-size: 18px;
+}

@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import EmblaCarousel from "../utils/Embla"
 
+import "./index.css"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
@@ -71,50 +72,41 @@ const IndexPage = () => (
       <EmblaCarousel slides={slides} />
     </div>
 
-    <div
-      className="trading__options__box"
-      style={{
-        width: "100%",
-        height: "20%",
-        marginBottom: "10%",
-      }}
-    >
-      <center>
-        <h2 style={{ fontSize: "68px" }}>Trading options</h2>
-        <p>
-          <h3 style={{ fontSize: "22px" }}>
-            Trade the way you want with 3 flexible trade types.
-          </h3>
-        </p>
-      </center>
-      <div style={{ display: "flex" }}>
-        <img
-          style={{
-            width: "30%",
-            border: "2px solid lightgray",
-            margin: "1%",
-          }}
-          src="https://www.melaninfx.com/xas.scdn5.secure.raxcdn.com/build/twigImages/blocksNew/openAccount/iPhone_black.3951fd8d.png"
-          alt="Spot"
-        />
-        <img
-          style={{
-            width: "30%",
-            border: "2px solid lightgray",
-            margin: "1%",
-          }}
-          src="https://bitso.com/legacy-assets/alpha/landing/assets/img/QR-Section.svg"
-          alt="Margin"
-        />
-        <img
-          style={{
-            width: "30%",
-            border: "2px solid lightgray",
-            margin: "1%",
-          }}
-          src="https://alb.com/assets/main/img/other/main-trade-image.svg"
-          alt="Futures"
-        />
+    <div className="trading__options__box">
+      <h2 style={{ fontSize: "68px" }}>Trading options</h2>
+
+      <h3 style={{ fontSize: "22px" }}>
+        Trade the way you want with 3 flexible trade types.
+      </h3>
+
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          textAlign: "center",
+        }}
+      >
+        <div className="trading__options__wrapper">
+          <img
+            src="https://www.melaninfx.com/xas.scdn5.secure.raxcdn.com/build/twigImages/blocksNew/openAccount/iPhone_black.3951fd8d.png"
+            alt="Spot"
+          />
+          <h5>CFDs</h5>
+        </div>
+        <div className="trading__options__wrapper">
+          <img
+            src="https://bitso.com/legacy-assets/alpha/landing/assets/img/QR-Section.svg"
+            alt="Margin"
+          />
+          <h5>Multipliers</h5>
+        </div>
+        <div className="trading__options__wrapper">
+          <img
+            src="https://alb.com/assets/main/img/other/main-trade-image.svg"
+            alt="Futures"
+          />
+          <h5>Options</h5>
+        </div>
       </div>
     </div>
 
@@ -130,36 +122,36 @@ const IndexPage = () => (
         <h2 style={{ fontSize: "68px" }}>Our platforms</h2>
         <br />
         <h4>
-          Choose from 8 awesome platforms — each developed to meet your needs.
+          Choose from 4 awesome platforms — each developed to meet your needs.
         </h4>
         <br />
       </center>
 
       <div
         className="our__platforms__box__container"
-        style={{ display: "flex", justifyContent: "space-between" }}
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
       >
         <div
           className="our__platforms__box__slider"
           style={{ display: "flex", flexDirection: "column" }}
         >
           <img
-            style={{ width: "40%", margin: "10%", opacity: "0.3" }}
             src="https://s2.coinmarketcap.com/static/img/coins/200x200/4195.png"
             alt="platform1"
           />
           <img
-            style={{ width: "40%", margin: "10%" }}
             src="https://www.svgrepo.com/show/308981/bitcoin-money-cryptocurrency.svg"
             alt="platform2"
           />
           <img
-            style={{ width: "40%", margin: "10%", opacity: "0.6" }}
             src="https://www.svgrepo.com/show/174165/bitcoin-emblem.svg"
             alt="platform3"
           />
           <img
-            style={{ width: "40%", margin: "10%", opacity: "0.3" }}
             src="https://www.svgrepo.com/show/224224/bitcoin.svg"
             alt="platform4"
           />
@@ -212,10 +204,29 @@ const IndexPage = () => (
         alt="mobileApp"
       />
 
-      <div>
-        Our awesome app
-        <p>download</p>
-        <p>please</p>
+      <div className="download__mobile__box__textbox">
+        <img
+          style={{ width: "50%", marginTop: "5%", borderRadius: "8px" }}
+          src="/logo.png"
+          alt="logo"
+        />
+        <h3>
+          Lightning fast deposits and withdrawals
+          <br />
+          with our mobile app
+        </h3>
+        <h4>Take your chance and earn crypto ASAP!</h4>
+        <Link
+          id="downloadApp"
+          to="/page-2"
+          style={{
+            color: "crimson",
+            fontSize: `24px`,
+            textDecoration: `none`,
+          }}
+        >
+          Learn more >
+        </Link>
       </div>
 
       <a href="https://github.com/" target="_blank">
