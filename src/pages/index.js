@@ -233,7 +233,8 @@ const IndexPage = () => (
         display: "flex",
         justifyContent: "space-around",
         margin: "5%",
-        backgroundColor: "lightcoral",
+        background:
+          "linear-gradient(90deg, rgba(238,174,202,1) 15%, rgba(28,35,43,0.48503151260504207) 100%)",
         borderRadius: "8px",
       }}
     >

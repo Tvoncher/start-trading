@@ -4,15 +4,16 @@ import { Link } from "gatsby"
 const Header = ({}) => (
   <header
     style={{
-      position: "fixed ",
+      position: "fixed",
       top: "0",
       width: "100%",
       background:
-        "linear-gradient(90deg, rgba(238,174,202,1) 15%, rgba(28,35,43,0.48503151260504207) 100%)",
+        "linear-gradient(90deg, rgba(238,174,202,1) 15%, rgba(28,35,43,1) 100%)",
+
       display: "flex",
       justifyContent: "space-between",
       alignItems: "center",
-      zIndex: "10",
+      zIndex: "100",
     }}
   >
     <img
