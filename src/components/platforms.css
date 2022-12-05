@@ -11,3 +11,6 @@
     rgba(255, 0, 0, 1) 100%
   );
 }
+.platform__selector {
+  border-radius: 10%;
+}

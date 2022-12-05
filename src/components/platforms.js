@@ -3,30 +3,20 @@ import { useState } from "react"
 import "./platforms.css"
 
 const Platforms = () => {
-  const [platform, setPlatform] = useState(
-    "https://d6t93aut4ltrr.cloudfront.net/Pictures/1024x536/0/4/1/7041_onlinetradingcryptocurrency20210902083528utc_48886.jpg"
-  )
+  const [platform, setPlatform] = useState("/platforms/platform1.jpg")
 
   const handleClick = e => {
     if (e.currentTarget.alt === "platform1") {
-      setPlatform(
-        "https://assets.fxcm.com/cdn-cgi/image/quality=100,format=webp/fxpress/fxcmcom/base/page/forex-trading-demo/forex-trading-station.jpg"
-      )
+      setPlatform("/platforms/platform2.jpg")
     }
     if (e.currentTarget.alt === "platform2") {
-      setPlatform(
-        "https://d6t93aut4ltrr.cloudfront.net/Pictures/1024x536/0/4/1/7041_onlinetradingcryptocurrency20210902083528utc_48886.jpg"
-      )
+      setPlatform("/platforms/platform1.jpg")
     }
     if (e.currentTarget.alt === "platform3") {
-      setPlatform(
-        "https://assets.fxcm.com/cdn-cgi/image/quality=100,format=webp/fxpress/fxcmcom/base/page/forex-trading-demo/forex-trading-station.jpg"
-      )
+      setPlatform("/platforms/platform3.png")
     }
     if (e.currentTarget.alt === "platform4") {
-      setPlatform(
-        "https://d6t93aut4ltrr.cloudfront.net/Pictures/1024x536/0/4/1/7041_onlinetradingcryptocurrency20210902083528utc_48886.jpg"
-      )
+      setPlatform("/platforms/platform4.jpg")
     }
 
     const imagesArr = Array.prototype.slice.call(
@@ -72,25 +62,25 @@ const Platforms = () => {
           <img
             className="platform__selector"
             onClick={handleClick}
-            src="https://s2.coinmarketcap.com/static/img/coins/200x200/4195.png"
+            src="/platforms/platform2.jpg"
             alt="platform1"
           />
           <img
             className="platform__selector selected__platform"
             onClick={handleClick}
-            src="https://www.svgrepo.com/show/308981/bitcoin-money-cryptocurrency.svg"
+            src="/platforms/platform1.jpg"
             alt="platform2"
           />
           <img
             className="platform__selector"
             onClick={handleClick}
-            src="https://www.svgrepo.com/show/174165/bitcoin-emblem.svg"
+            src="/platforms/platform3.png"
             alt="platform3"
           />
           <img
             className="platform__selector"
             onClick={handleClick}
-            src="https://www.svgrepo.com/show/224224/bitcoin.svg"
+            src="/platforms/platform4.jpg"
             alt="platform4"
           />
         </div>
