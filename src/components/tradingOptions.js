@@ -23,21 +23,21 @@ const TradingOptions = () => {
             src="../images/tradingOptions/CFDs.png"
             alt="CFDs"
           />
-          <h5>CFDs</h5>
+          <h5 className="trading__options__title">CFDs</h5>
         </div>
         <div className="trading__options__wrapper">
           <StaticImage
             src="../images/tradingOptions/multipliers.png"
             alt="Multipliers"
           />
-          <h5>Multipliers</h5>
+          <h5 className="trading__options__title">Multipliers</h5>
         </div>
         <div className="trading__options__wrapper">
           <StaticImage
             src="../images/tradingOptions/options.png"
             alt="Options"
           />
-          <h5>Options</h5>
+          <h5 className="trading__options__title">Options</h5>
         </div>
       </div>
     </div>
