@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -21,7 +22,7 @@ const Layout = ({ children }) => {
       <div>
         <main>{children}</main>
         <footer className="footer">
-          <img className="footer__logo" src="/logoBot.png" alt="logo" />
+          <StaticImage src="../images\logoBot.png" alt="footer__logo" />
 
           <div className="socials" style={{ display: "flex", width: "40%" }}>
             <img

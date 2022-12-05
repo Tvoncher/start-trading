@@ -5,10 +5,11 @@ import EmblaCarousel from "../utils/Embla"
 
 import "./index.css"
 import Layout from "../components/layout"
-import Platforms from "../components/platforms"
-import JoinUs from "../components/joinUs"
+
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
+const JoinUs = React.lazy(() => import("../components/joinUs"))
+const Platforms = React.lazy(() => import("../components/platforms"))
 
 const SLIDE_COUNT = 5
 const slides = Array.from(Array(SLIDE_COUNT).keys())
@@ -57,7 +58,8 @@ const IndexPage = () => (
           </button>
         </h2>
       </div>
-      <img src="https://s3-us-west-1.amazonaws.com/coin-tracker-public/static/images/sprites/mobile-apps.svg"></img>
+
+      <StaticImage src="../images\firstLoaded.png" alt="first loaded img" />
     </div>
 
     <div
@@ -178,14 +180,15 @@ const IndexPage = () => (
           Learn more >
         </Link>
       </div>
-
-      <a href="https://github.com/" target="_blank">
-        <img
-          src="http://qrcoder.ru/code/?http%3A%2F%2Fhttps%3A%2F%2Fgithub.com%2F&6&0"
-          width="198"
-          height="198"
-        ></img>
-      </a>
+      <div
+        className="QR__div"
+        style={{ display: "flex", flexDirection: "column" }}
+      >
+        <a href="https://github.com/" target="_blank">
+          <img src="/qr.gif" alt="qr code" width="198" height="198"></img>
+        </a>
+        Scan or click to download our app
+      </div>
     </div>
 
     <JoinUs />

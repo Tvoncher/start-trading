@@ -1,3 +1,4 @@
+import { StaticImage } from "gatsby-plugin-image"
 import * as React from "react"
 import "./joinUs.css"
 
@@ -51,9 +52,9 @@ const JoinUs = () => {
         </div>
       </div>
 
-      <img
+      <StaticImage
         style={{ objectFit: "cover", width: "30%", marginTop: "3%" }}
-        src="/joinUs.png"
+        src="../images\joinUs.png"
         alt="joinUs"
       />
     </div>
