@@ -1,0 +1,67 @@
+.join__us__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 3%;
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 15%,
+    rgba(28, 35, 43, 0.48503151260504207) 100%
+  );
+}
+
+.join__us__box__signUp {
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 1%;
+  max-width: 30%;
+}
+
+.join__us__box__signUp h3 {
+  margin: 5%;
+}
+
+.buttonSignUp {
+  background-color: crimson;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.buttonSignUp:hover,
+.buttonSignUp:focus {
+  background-color: #f082ac;
+}
+
+.emailInput {
+  padding: 10px;
+  border-radius: 6px;
+  margin-right: 3%;
+}
+
+#join__us__socialsImg {
+  width: 12%;
+  margin-top: 5%;
+  margin-right: 2%;
+  cursor: pointer;
+}

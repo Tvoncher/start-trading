@@ -6,6 +6,7 @@ import EmblaCarousel from "../utils/Embla"
 import "./index.css"
 import Layout from "../components/layout"
 import Platforms from "../components/platforms"
+import JoinUs from "../components/joinUs"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 
@@ -187,59 +188,7 @@ const IndexPage = () => (
       </a>
     </div>
 
-    <div
-      className="join__us__box"
-      style={{
-        display: "flex",
-        justifyContent: "space-around",
-        margin: "5%",
-        background:
-          "linear-gradient(90deg, rgba(238,174,202,1) 15%, rgba(28,35,43,0.48503151260504207) 100%)",
-        borderRadius: "8px",
-      }}
-    >
-      <div
-        className="join__us__box__signUp"
-        style={{
-          backgroundColor: "white",
-          borderRadius: "8px",
-          marginTop: "1%",
-        }}
-      >
-        <h2>Join over 10 million traders worldwide</h2>
-        <p>
-          <h4>Sign up for your demo account now</h4>
-        </p>
-        <input
-          style={{ margin: "3%" }}
-          type="email"
-          placeholder="Email"
-          required
-        />
-        <button
-          style={{
-            borderRadius: "10%",
-            backgroundColor: "crimson",
-            padding: "3%",
-            cursor: "pointer",
-          }}
-        >
-          SignUp
-        </button>
-        <input
-          type="checkbox"
-          name="termsAndConditions"
-          id="termsAndConditions"
-        />
-        <p>I agree to the terms and conditions</p>
-        <p>Or sign up with</p>
-      </div>
-      <img
-        style={{ objectFit: "cover", width: "30%", marginTop: "3%" }}
-        src="https://alphatradinghub.com/wp-content/uploads/2022/03/futures.png"
-        alt="joinUs"
-      />
-    </div>
+    <JoinUs />
   </Layout>
 )
 
