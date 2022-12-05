@@ -34,17 +34,17 @@ const JoinUs = () => {
             <div>
               <img
                 id="join__us__socialsImg"
-                src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/twitter-square-icon.png"
+                src="/socials/twitter.png"
                 alt="twitter"
               />
               <img
                 id="join__us__socialsImg"
-                src="https://cdn-icons-png.flaticon.com/512/4138/4138164.png"
+                src="/socials/insta.png"
                 alt="insta"
               />
               <img
                 id="join__us__socialsImg"
-                src="http://cdn.onlinewebfonts.com/svg/img_150148.png"
+                src="/socials/linkedin.png"
                 alt="linkedIn"
               />
             </div>
