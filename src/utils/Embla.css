@@ -43,6 +43,7 @@
   height: 210px;
   width: 100%;
   border-radius: 14px;
+  cursor: grab;
 }
 .embla__slide__inner:hover .embla__caption {
   visibility: visible;
