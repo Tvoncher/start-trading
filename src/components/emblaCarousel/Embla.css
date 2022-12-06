@@ -12,11 +12,6 @@
   width: 100%;
 }
 
-.embla__viewport.is-draggable {
-  cursor: move;
-  cursor: grab;
-}
-
 .embla__viewport.is-dragging {
   cursor: grabbing;
 }

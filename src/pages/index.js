@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import EmblaCarousel from "../utils/Embla"
+import EmblaCarousel from "../components/emblaCarousel/Embla"
 
 import "./index.css"
 import Layout from "../components/layout"
