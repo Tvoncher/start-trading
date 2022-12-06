@@ -5,7 +5,7 @@ const Header = ({}) => (
   <header
     style={{
       position: "fixed",
-      top: "0",
+      top: "0vh",
       width: "100%",
       background:
         "linear-gradient(90deg, rgba(238,174,202,1) 15%, rgba(28,35,43,1) 100%)",
