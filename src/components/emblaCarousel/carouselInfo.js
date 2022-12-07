@@ -1,4 +1,4 @@
-export const media = [
+const media = [
   "/markets/binary.png",
   "/markets/crypto.png",
   "/markets/forex.png",
