@@ -7,11 +7,9 @@ const JoinUs = () => {
     <div className="join__us__box">
       <div className="join__us__box__signUp">
         <h3>Join over 10 million traders worldwide</h3>
-        <p>
-          <h3 style={{ color: "SlateGray" }}>
-            Sign up for your demo account now
-          </h3>
-        </p>
+        <h3 style={{ color: "SlateGray" }}>
+          Sign up for your demo account now
+        </h3>
 
         <div style={{ marginLeft: "3%" }}>
           <input

@@ -1,13 +1,16 @@
 import * as React from "react"
+import { Suspense } from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import EmblaCarousel from "../components/emblaCarousel/Embla"
-
 import "./index.css"
 import Layout from "../components/layout"
-
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
+
+const EmblaCarousel = React.lazy(() =>
+  import("../components/emblaCarousel/Embla")
+)
+
 const JoinUs = React.lazy(() => import("../components/joinUs"))
 const Platforms = React.lazy(() => import("../components/platforms"))
 const TradingOptions = React.lazy(() => import("../components/tradingOptions"))
@@ -73,8 +76,10 @@ const IndexPage = () => (
     >
       <center>
         <h2 style={{ fontSize: "68px" }}>Markets</h2>
+        <Suspense fallback="loading...">
+          <EmblaCarousel slides={slides} />
+        </Suspense>
       </center>
-      <EmblaCarousel slides={slides} />
     </div>
 
     <TradingOptions />
@@ -139,7 +144,7 @@ const IndexPage = () => (
             textDecoration: `none`,
           }}
         >
-          Learn more >
+          Learn more
         </Link>
       </div>
       <div
@@ -147,7 +152,7 @@ const IndexPage = () => (
         style={{ display: "flex", flexDirection: "column" }}
       >
         <a href="https://github.com/" target="_blank">
-          <img src="/qr.gif" alt="qr code" width="198" height="198"></img>
+          <img src="/qr.jpg" alt="qr code" width="198" height="198"></img>
         </a>
         Scan or click to download our app
       </div>
