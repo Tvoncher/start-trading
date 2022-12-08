@@ -27,7 +27,7 @@ const IndexPage = () => (
         flexWrap: "wrap",
         justifyContent: "space-around",
         marginBottom: "5%",
-        paddingTop: "5%",
+        paddingTop: "10%",
         background: "rgb(238,174,202)",
         background:
           "linear-gradient(90deg, rgba(238,174,202,1) 15%, rgba(28,35,43,0.48503151260504207) 64%)",

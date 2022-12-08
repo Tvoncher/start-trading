@@ -7,6 +7,7 @@ const Header = ({}) => (
       position: "fixed",
       top: "0vh",
       width: "100%",
+      maxHeight: "10%",
       background:
         "linear-gradient(90deg, rgba(238,174,202,1) 15%, rgba(28,35,43,1) 100%)",
 
