@@ -54,6 +54,7 @@ const JoinUs = () => {
         style={{ objectFit: "cover", width: "30%", marginTop: "3%" }}
         src="../images\joinUs.png"
         alt="joinUs"
+        loading="lazy"
       />
     </div>
   )

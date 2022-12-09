@@ -22,3 +22,5 @@ export const marketsCaption = [
   "Great place to start investing your money, especially for beginners",
   "Invest in physical substances like oil, gold, or agricultural products",
 ]
+
+export const slides = [0, 1, 2, 3, 4]
