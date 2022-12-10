@@ -1,5 +1,6 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import { Link } from "gatsby"
 
 const FirstLoaded = () => {
   return (
@@ -38,7 +39,15 @@ const FirstLoaded = () => {
               marginTop: "10%",
             }}
           >
-            Create demo account
+            <Link
+              to="/signup"
+              style={{
+                color: "white",
+                textDecoration: `none`,
+              }}
+            >
+              Create demo account
+            </Link>
           </button>
         </h2>
       </div>
