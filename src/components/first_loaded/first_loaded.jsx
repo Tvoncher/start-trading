@@ -28,27 +28,22 @@ const FirstLoaded = () => {
             Trade with us <br />
             earn extra prizes
           </p>
-          <button
+          <Link
+            to="/signup"
             style={{
+              color: "white",
+              textDecoration: `none`,
               borderRadius: "8px",
               backgroundColor: "crimson",
               padding: "5%",
               cursor: "pointer",
-              color: "white",
-              fontSize: "18px",
+              fontSize: "16px",
+              fontWeight: "500",
               marginTop: "10%",
             }}
           >
-            <Link
-              to="/signup"
-              style={{
-                color: "white",
-                textDecoration: `none`,
-              }}
-            >
-              Create demo account
-            </Link>
-          </button>
+            Create demo account
+          </Link>
         </h2>
       </div>
       <StaticImage

@@ -47,14 +47,22 @@ const Sign_Up = () => (
         justifyContent: "center",
       }}
     >
-      <div className="sign_up_info" style={{ marginLeft: "10%" }}>
+      <div
+        className="sign_up_info"
+        style={{
+          marginLeft: "10%",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+        }}
+      >
         <img
           style={{ width: "100%", height: "40%" }}
           src="/candles.png"
           alt="candles"
         />
-        <h2>Start trading with Easy Trading</h2>
-        <h4>
+        <h1>Start trading with Easy Trading</h1>
+        <h4 style={{ fontWeight: "400" }}>
           Join over 5 million people who trade with Deriv.com and Binary.com —
           the award-winning platform that’s been trusted for over 20 years.
         </h4>
@@ -73,7 +81,6 @@ const Sign_Up = () => (
         >
           <h2>Sign Up</h2>
           <h4>Enter your email address to begin</h4>
-
           <input
             style={{ marginTop: "5%" }}
             type="email"
@@ -131,6 +138,9 @@ const Sign_Up = () => (
               />
             </div>
           </div>
+          <center style={{ marginTop: "5%" }}>
+            Already have an account? Log in
+          </center>
         </div>
       </div>
     </div>
