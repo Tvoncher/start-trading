@@ -13,6 +13,7 @@ const TradingOptions = () => {
       <div
         style={{
           display: "flex",
+          flexWrap: "wrap",
           justifyContent: "space-between",
           textAlign: "center",
         }}

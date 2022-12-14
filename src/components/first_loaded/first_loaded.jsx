@@ -1,21 +1,11 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
+import "./first_loaded.css"
 
 const FirstLoaded = () => {
   return (
-    <div
-      className="firstLoaded"
-      style={{
-        display: "flex",
-        flexWrap: "wrap",
-        justifyContent: "space-around",
-        marginBottom: "5%",
-        paddingTop: "10%",
-        background:
-          "linear-gradient(90deg, rgba(238,174,202,1) 15%, rgba(28,35,43,0.48503151260504207) 64%)",
-      }}
-    >
+    <div className="firstLoaded">
       <div>
         <h2 style={{ fontSize: "48px" }}>
           Easy.
@@ -46,8 +36,10 @@ const FirstLoaded = () => {
           </Link>
         </h2>
       </div>
+
       <StaticImage
-        src="../images\firstLoaded.png"
+        className="first_loaded_img"
+        src="./firstLoaded.png"
         alt="first loaded img"
         loading="eager"
       />

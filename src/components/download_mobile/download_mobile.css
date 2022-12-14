@@ -1,0 +1,36 @@
+.download__mobile__box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.download_mobile_logo {
+  width: 50%;
+  margin-top: 5%;
+  border-radius: 8px;
+}
+
+#downloadApp {
+  color: crimson;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+@media (orientation: portrait) {
+  .download__mobile__box {
+    flex-wrap: wrap;
+  }
+  .download_mobile_img {
+    margin-top: 3%;
+    width: 100%;
+  }
+  .download_mobile_logo {
+    width: 0%;
+    visibility: hidden;
+  }
+  .QR__div {
+    margin: 0 auto;
+  }
+  #downloadApp {
+    margin: 0 auto;
+  }
+}

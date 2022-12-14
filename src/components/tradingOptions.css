@@ -24,3 +24,10 @@
   margin-top: 3%;
   font-size: 20px;
 }
+
+@media (orientation: portrait) {
+  .trading__options__wrapper {
+    width: 80%;
+    margin-left: 10%;
+  }
+}

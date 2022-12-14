@@ -51,7 +51,7 @@ const JoinUs = () => {
       </div>
 
       <StaticImage
-        style={{ objectFit: "cover", width: "30%", marginTop: "3%" }}
+        className="join_us_img"
         src="../images\joinUs.png"
         alt="joinUs"
         loading="lazy"

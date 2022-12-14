@@ -1,0 +1,15 @@
+.reviws__box {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 15%,
+    rgba(28, 35, 43, 0.48503151260504207) 64%
+  );
+}
+
+@media (orientation: portrait) {
+  .reviws__box {
+    flex-wrap: wrap;
+  }
+}

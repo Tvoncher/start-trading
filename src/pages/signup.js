@@ -14,50 +14,16 @@ const Sign_Up = () => (
           textDecoration: `none`,
         }}
       >
-        <div
-          className="sign_up_header"
-          style={{
-            position: "absolute",
-            top: "0",
-            background: "black",
-            display: "flex",
-            width: "100%",
-            justifyContent: "center",
-            alignItems: "center",
-            inlineSize: "100%",
-            color: "white",
-            height: "10%",
-          }}
-        >
-          <img
-            style={{ marginRight: "2%", width: "10%" }}
-            src="/logoHead.png"
-            alt="logo"
-          />
+        <div className="sign_up_header">
+          <img className="sign_up_header_logo" src="/logoHead.png" alt="logo" />
           | START TRADING
         </div>
       </Link>
     </div>
-    <div
-      className="sign_up_box"
-      style={{
-        marginTop: "15%",
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "center",
-      }}
-    >
-      <div
-        className="sign_up_info"
-        style={{
-          marginLeft: "10%",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-        }}
-      >
+    <div className="sign_up_box">
+      <div className="sign_up_info">
         <img
-          style={{ width: "100%", height: "40%" }}
+          className="sign_up_info_candles"
           src="/candles.png"
           alt="candles"
         />
@@ -67,21 +33,12 @@ const Sign_Up = () => (
           the award-winning platform that’s been trusted for over 20 years.
         </h4>
       </div>
-      <div
-        className="sign_up_box"
-        style={{ background: "white", marginRight: "10%", width: "75%" }}
-      >
-        <div
-          className="sign_up_form"
-          style={{
-            margin: "5%",
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
+      <div className="sign_up_wrapper">
+        <div className="sign_up_form">
           <h2>Sign Up</h2>
           <h4>Enter your email address to begin</h4>
           <input
+            id="input_email"
             style={{ marginTop: "5%" }}
             type="email"
             placeholder="Email"
@@ -98,15 +55,7 @@ const Sign_Up = () => (
             I agree to the terms and conditions
           </label>
           <input
-            style={{
-              marginTop: "5%",
-              borderRadius: "8px",
-              backgroundColor: "crimson",
-              padding: "5%",
-              cursor: "pointer",
-              color: "white",
-              fontSize: "16px",
-            }}
+            id="sign_up_form_submit"
             type="submit"
             value="Create demo account"
           />

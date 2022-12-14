@@ -59,9 +59,27 @@
   margin-right: 3%;
 }
 
+.join_us_img {
+  object-fit: cover;
+  width: 30%;
+  margin-top: 3%;
+}
+
 #join__us__socialsImg {
   width: 12%;
   margin-top: 5%;
   margin-right: 2%;
   cursor: pointer;
+}
+
+@media (orientation: portrait) {
+  .join__us__box__signUp {
+    width: 100%;
+    max-width: 100%;
+    margin: 3%;
+    order: 1;
+  }
+  .join_us_img {
+    width: 100%;
+  }
 }

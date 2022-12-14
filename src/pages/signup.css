@@ -1,3 +1,68 @@
 body {
   background: LavenderBlush;
 }
+
+.sign_up_header {
+  position: absolute;
+  top: 0;
+  background: black;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  inline-size: 100%;
+  color: white;
+  height: 10vh;
+}
+.sign_up_header_logo {
+  margin-right: 2%;
+  width: 10%;
+}
+
+.sign_up_box {
+  margin-top: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sign_up_info {
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sign_up_info_candles {
+  width: 100%;
+  height: 40%;
+}
+
+.sign_up_wrapper {
+  background: white;
+  margin-right: 10%;
+  width: 75%;
+}
+
+.sign_up_form {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+#sign_up_form_submit {
+  margin-top: 5%;
+  border-radius: 8px;
+  background-color: crimson;
+  padding: 5%;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+}
+
+@media (orientation: portrait) {
+  .sign_up_box {
+    flex-wrap: wrap;
+    margin-right: 10%;
+  }
+}

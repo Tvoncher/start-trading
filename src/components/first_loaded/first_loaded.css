@@ -1,0 +1,21 @@
+.firstLoaded {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 5%;
+  padding-top: 10%;
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 15%,
+    rgba(28, 35, 43, 0.48503151260504207) 64%
+  );
+}
+
+@media (orientation: portrait) {
+  .firstLoaded {
+    margin-top: 5%;
+  }
+  .firstLoaded img {
+    margin-top: 5%;
+  }
+}

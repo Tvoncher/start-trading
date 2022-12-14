@@ -22,9 +22,13 @@ const Layout = ({ children }) => {
       <div>
         <main>{children}</main>
         <footer className="footer">
-          <StaticImage src="../images\logoBot.png" alt="footer__logo" />
+          <StaticImage
+            className="footer_img"
+            src="../images\logoBot.png"
+            alt="footer__logo"
+          />
 
-          <div className="socials" style={{ display: "flex", width: "40%" }}>
+          <div className="socials">
             <img
               onClick={() => alert("Welcome to our facebook page!")}
               id="socialsImg"

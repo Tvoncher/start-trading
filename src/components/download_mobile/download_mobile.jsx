@@ -1,40 +1,27 @@
 import React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import "./download_mobile.css"
 
 const DownloadMobile = () => {
   return (
-    <div
-      className="download__mobile__box"
-      style={{ display: "flex", justifyContent: "space-between" }}
-    >
+    <div className="download__mobile__box">
       <StaticImage
+        className="download_mobile_img"
         loading="lazy"
-        src="../images\mobileApp.png"
+        src="./mobileApp.png"
         alt="mobile App"
       />
 
       <div className="download__mobile__box__textbox">
-        <img
-          style={{ width: "50%", marginTop: "5%", borderRadius: "8px" }}
-          src="/logo.png"
-          alt="logo"
-        />
+        <img className="download_mobile_logo" src="/logo.png" alt="logo" />
         <h3>
           Lightning fast deposits and withdrawals
           <br />
           with our mobile app
         </h3>
         <h4>Take your chance and earn crypto ASAP!</h4>
-        <Link
-          id="downloadApp"
-          to="/page-2"
-          style={{
-            color: "crimson",
-            fontSize: `24px`,
-            textDecoration: `none`,
-          }}
-        >
+        <Link id="downloadApp" to="/page-2">
           {"Learn more >"}
         </Link>
       </div>

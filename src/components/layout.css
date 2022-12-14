@@ -30,8 +30,35 @@
   );
 }
 
+.socials {
+  display: flex;
+  width: 40%;
+}
+
 .footer__logo {
   width: 15%;
   margin-left: 3%;
   border-radius: 8px;
+}
+
+.loremh5 {
+  margin: 5%;
+  font-weight: 400;
+}
+
+@media (orientation: portrait) {
+  .footer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer__logo {
+    width: 15%;
+    margin-left: 3%;
+    border-radius: 8px;
+  }
+
+  .footer_img {
+    width: 30%;
+  }
 }

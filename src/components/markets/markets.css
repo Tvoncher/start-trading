@@ -67,3 +67,9 @@
   margin-top: 5%;
   visibility: hidden;
 }
+
+@media (orientation: portrait) {
+  .embla__slide {
+    min-width: 80%;
+  }
+}

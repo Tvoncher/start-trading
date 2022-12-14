@@ -47,18 +47,8 @@ const Platforms = () => {
         <br />
       </center>
 
-      <div
-        className="our__platforms__box__container"
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
-      >
-        <div
-          className="our__platforms__box__slider"
-          style={{ display: "flex", flexDirection: "column" }}
-        >
+      <div className="our__platforms__box__container">
+        <div className="our__platforms__box__slider">
           <img
             className="platform__selector"
             onClick={handleClick}
@@ -85,7 +75,7 @@ const Platforms = () => {
           />
         </div>
         <img
-          style={{ width: "50vw", height: "40vh", margin: "10%" }}
+          className="platform_large_img"
           src={platform}
           alt="platformLarge1"
         />
