@@ -24,15 +24,13 @@ const Markets = () => (
       />
       <h5 className="loremh5">
         Why trade with us? We have:
-        <ul>
-          <li>Low commission</li>
-          <li>Easy-to-use trading platforms</li>
-          <li>40+ crypto pairs</li>
-          <li>Higher leverage,higher profit</li>
-          <li>Rapid and secure withdrawal</li>
-          <li>Trading 24/7</li>
-          <li>Friendly support</li>
-        </ul>
+        <p>-Low commission</p>
+        <p>-Easy-to-use trading platforms</p>
+        <p>-40+ crypto pairs</p>
+        <p>-Higher leverage,higher profit</p>
+        <p>-Rapid and secure withdrawal</p>
+        <p>-Trading 24/7</p>
+        <p>-Friendly support</p>
       </h5>
 
       <img

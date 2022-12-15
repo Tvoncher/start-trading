@@ -14,11 +14,9 @@ const Trade = () => (
       </h1>
       <h5 className="loremh5">
         In Easy Trading we have 3 main trading options:
-        <ul>
-          <li>Contract for difference (CFD)</li>
-          <li>Options</li>
-          <li>Multipliers</li>
-        </ul>
+        <p>-Contract for difference (CFD)</p>
+        <p>-Options</p>
+        <p>-Multipliers</p>
       </h5>
       <img
         style={{ width: "50%" }}

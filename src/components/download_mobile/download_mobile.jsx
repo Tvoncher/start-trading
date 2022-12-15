@@ -21,7 +21,7 @@ const DownloadMobile = () => {
           with our mobile app
         </h3>
         <h4>Take your chance and earn crypto ASAP!</h4>
-        <Link id="downloadApp" to="/page-2">
+        <Link id="downloadApp" to="/trade">
           {"Learn more >"}
         </Link>
       </div>
