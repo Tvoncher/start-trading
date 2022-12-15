@@ -18,7 +18,12 @@ const JoinUs = () => {
             placeholder="Email"
             required
           />
-          <button className="buttonSignUp">Sign up</button>
+          <button
+            className="buttonSignUp"
+            onClick={() => alert("Coming soon!")}
+          >
+            Sign up
+          </button>
         </div>
         <div style={{ marginLeft: "3%" }}>
           <input
@@ -31,16 +36,19 @@ const JoinUs = () => {
             Or sign up with
             <div>
               <img
+                onClick={() => alert("Sorry, currently not supported")}
                 id="join__us__socialsImg"
                 src="/socials/twitter.png"
                 alt="twitter"
               />
               <img
+                onClick={() => alert("Sorry, currently not supported")}
                 id="join__us__socialsImg"
                 src="/socials/insta.png"
                 alt="insta"
               />
               <img
+                onClick={() => alert("Sorry, currently not supported")}
                 id="join__us__socialsImg"
                 src="/socials/linkedin.png"
                 alt="linkedIn"

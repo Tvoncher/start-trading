@@ -55,6 +55,7 @@ const Sign_Up = () => (
             I agree to the terms and conditions
           </label>
           <input
+            onClick={() => alert("Coming soon!")}
             id="sign_up_form_submit"
             type="submit"
             value="Create demo account"
@@ -71,16 +72,19 @@ const Sign_Up = () => (
             <center>Or sign up with</center>
             <div style={{ display: "flex", justifyContent: "space-around" }}>
               <img
+                onClick={() => alert("Work in progress")}
                 id="join__us__socialsImg"
                 src="/socials/facebook.png"
                 alt="facebook"
               />
               <img
+                onClick={() => alert("Work in progress")}
                 id="join__us__socialsImg"
                 src="/socials/telegram.png"
                 alt="telegram"
               />
               <img
+                onClick={() => alert("Work in progress")}
                 id="join__us__socialsImg"
                 src="/socials/linkedin.png"
                 alt="linkedIn"

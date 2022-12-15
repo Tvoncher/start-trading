@@ -157,7 +157,7 @@ const Header = () => {
         </Link>
 
         <button
-          onClick={() => alert("U need 2 w8")}
+          onClick={() => alert("Sorry, not yet")}
           style={{
             background: "crimson",
             border: "0",
