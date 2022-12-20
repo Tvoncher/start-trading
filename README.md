@@ -5,7 +5,9 @@ Please consider this before reviewing :)
 
 ## Work in process,still need to:
 
-- create greeting page for new users
+- add authentication (email,login)
+
+- some kind of greeting page for new users
 
 - add authentication (google,FB)
 
