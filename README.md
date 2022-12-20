@@ -2,3 +2,13 @@
 
 Simple site for trading broker. Also its my very first project made with Gatsby. So there is high possibility that I'll collect all possible mistakes developing it.
 Please consider this before reviewing :)
+
+## Work in process,still need to:
+
+- create greeting page for new users
+
+- add authentication (google,FB)
+
+- conditional rendering
+
+- customise pages
